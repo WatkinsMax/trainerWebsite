@@ -1,0 +1,508 @@
+ /* Case Study Website */ 
+
+/* Website Colours 
+
+Main Colours:
+
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple
+
+*/
+
+/* Mobile Default Styling (Global Default) */
+
+
+/* Prevents adjustments of font size after resizing */
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+/* Apply a natural box model layout to all elements */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+@font-face {	
+	font-family: '28_days';
+	src: url(/vendors/fonts/28_days_later-webfont.eot);
+	src: url(/vendors/fonts/28_days_later-webfont.svg) format('svg'),
+		url(/vendors/fonts/28_days_later-webfont.woff) format('woff'),
+		url(/vendors/fonts/28_days_later-webfont.woff2) format('woff2'),
+		url(/vendors/fonts/28_days_later.ttf) format('truetype');
+		font-weight: normal;
+		font-style: normal;
+}
+
+img, video {
+	width: 100%;
+}
+
+
+body {
+	
+	font-family: serif, sans-serif;
+	font-size: 16px;
+	color: rgb(44,44,44);
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Home Section */
+
+.homeBgImage{
+	
+	position: relative;
+	background-image: url(/resources/images/trainerHomePage.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	height: 100vh;
+}
+
+.headerC {
+	
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	
+}
+
+.logoC {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 45px;
+	
+}
+
+.basketIcon {
+	
+	color: rgb(200, 177, 250);
+	position: absolute;
+	top: 10px;
+	left: 45vw;
+	width: 45px;
+	z-index: 4;
+	
+}
+
+.fa-shopping-basket {
+	font-size: 2em;
+}
+
+.navC {
+	
+	color: #fff;
+	background-color: rgb(53, 38, 80);
+}
+
+#navBtn {
+	display: block;
+	font-size: 2.5em;
+	width: 20%;
+	background-color: rgb(53, 38, 80);
+	text-align: center;
+	margin: 0 5vw 0 85vw;
+	padding: 7px 5px;
+}
+
+
+.menuItems {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+}
+
+.menuItems {
+	display: none;
+}
+
+nav li a {
+	
+/*	font-family: serif, sans-serif;*/
+	color: #fff;
+	text-align: right;
+	border-top: 3px;
+	text-transform: uppercase;
+}
+
+.slogan {
+	font-family: '28_days', cursive;
+	color: #fff;
+	text-align: right;
+	padding: 150px 5vw 0px 0px;
+	font-size: 2.5em;
+	text-transform: uppercase;
+/*
+	top: 200px;
+	right: 160px;
+*/
+
+}
+
+.mainHeading{
+	font-family: 'Lovers Quarrel', cursive;
+	color: #fff;
+	font-size: 2.5em;
+	text-align: center;
+	letter-spacing: 3px;
+	margin:  50vh auto 0 auto;
+	font-weight: lighter;
+}
+
+.newArrivals {
+	color: #fff;
+	top: 480px;
+	left: 400px;
+	text-decoration: none;
+	z-index: 6;
+}
+
+.newArrivalsB {
+	display: block;
+	background-color: rgba(200, 177, 250, 0.25);
+	padding: 15px 20px;
+	color: #fff;
+	border-radius: 5px 5px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	text-align: center;
+	margin: 0 32vw 0 auto;
+	cursor: pointer;
+	font-family: arial, serif;
+}
+
+/* Products Section */
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1.2em;
+	font-weight: lighter;
+	color: rgb(47, 79, 79);
+}
+
+.caption {
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1em;
+	font-weight: lighter;
+	color: rgb(47, 79, 79);
+	padding: 0 10px;
+}
+
+figure{
+	margin: 0;
+}
+
+figcaption {
+	font-family: 'Mukta', sans-serif;
+	font-size: 0.8;
+	text-align: center;
+}
+
+.allProducts article button {
+	display: block;
+	padding: 15px 20px;
+	border-radius: 5px 5px;
+	background-color:  rgb(53, 38, 80);
+	border: 1px solid white;
+	margin: 10px 15vw 10px auto;
+}
+
+.allProducts article button a {
+	color: #fff;
+	font-family: arial, serif;
+	padding-right: 30px;
+
+}
+
+button {
+	padding: 0;
+	margin: 0 15%;
+}
+
+article {
+	margin: 0 15%;
+}
+
+/*Log In Page*/
+
+.login{
+	border: 1px solid #000;
+	margin: 15px 15px;
+	font-family: 'Mukta', sans-serif;
+	text-align: center;
+}
+
+
+/*Contact Page */
+
+.contactBgImage {
+		
+	position: relative;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.80), rgb(0, 0, 0, 0.80)), url(/resources/images/trainerContactBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	height: 100vh;
+}
+
+.contactHeader {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1.2em;
+	font-weight: lighter;
+	color: rgb(255, 255, 255);
+	padding: 25px 25px;
+	margin-top: 40px;
+}
+
+.contactCaption {
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1em;
+	font-weight: lighter;
+	color: rgb(225, 225, 225);
+	padding: 0 10px;
+}
+
+h2 {
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Mukta', sans-serif;
+	font-size: 0.9em;
+	font-weight: lighter;
+	color: rgb(225, 225, 225);
+	padding-top: 10px;
+	
+}
+
+.address {
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-size: 0.8em;
+	font-weight: lighter;
+	color: rgb(255, 255, 255);
+}
+
+.contactButton{
+	padding: 5px 20px;
+	border-radius: 5px 5px;
+	margin: 10px 27vw 10px auto;
+}
+
+.contactForm{
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Mukta', sans-serif;
+	font-size: 0.7em;
+	font-weight: lighter;
+	color: rgb(255, 255, 255);
+}
+
+.fa-phone{
+	color: rgb(200, 177, 250);
+}
+
+.fa-envelope{
+	color: rgb(200, 177, 250);
+}
+
+.telMob{
+	color: rgb(225, 225, 225);
+	background-color: rgb(183, 154, 246); 
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1em;
+}
+
+.formText{
+	margin-left: 20px;
+	text-align: left;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1em;
+	font-weight: lighter;
+	color: rgb(255, 255, 255);
+}
+
+.formBox{
+	margin: 15px 20px;
+	width: 375px;
+	height: 80px;
+	opacity: 0.2;
+	border: 1px solid #fff;
+}
+
+/* Mobile Styles - 568px Resolution */
+
+@media screen and (min-width: 568px){
+	
+	.mainHeading{
+	font-size: 2.5em;
+	letter-spacing: 3px;
+	margin:  25vh auto 0 auto;
+	font-weight: lighter;
+}
+
+.newArrivalsB {
+	padding: 15px 20px;
+	margin: 10px 38vw 0 auto;
+	cursor: pointer;
+	
+}
+
+article {
+	margin: 0 15%;
+}
+	
+/* Tablet Styles - 768px Resolution */
+}
+
+@media screen and (min-width: 768px){
+	
+.basketIcon {
+	
+	color: rgb(200, 177, 250);
+	position: absolute;
+	top: 10px;
+	left: 47vw;
+	width: 45px;
+	z-index: 4;
+	
+}
+
+.fa-shopping-basket {
+	font-size: 2.8em;
+}
+
+.navC {
+	
+	color: #fff;
+	background-color: rgb(53, 38, 80);
+}
+
+#navBtn {
+	display: block;
+	font-size: 2.5em;
+	width: 20%;
+	background-color: rgb(53, 38, 80);
+	text-align: center;
+	margin: 0 5vw 0 85vw;
+	padding: 7px 5px;
+}
+
+.mainHeading{
+	font-family: 'Lovers Quarrel', cursive;
+	color: #fff;
+	font-size: 2.5em;
+	text-align: right;
+	letter-spacing: 3px;
+	margin:  15vh 23px 0 auto;
+	font-weight: lighter;
+}
+
+.newArrivalsB {
+	display: block;
+	background-color: rgba(200, 177, 250, 0.25);
+	padding: 15px 20px;
+	color: #fff;
+	border-radius: 5px 5px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	text-align: center;
+	margin: 10px 6vw 0 auto;
+	cursor: pointer;
+	font-family: arial, serif;
+}	
+	
+article {
+	margin: 0 20%;
+}
+	
+.addToCart{
+	padding: 10px 15vw 0 50px;
+	}
+.contactBgImage {
+		
+	position: relative;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.80), rgb(0, 0, 0, 0.80)), url(/resources/images/trainerContactBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: auto;
+	height: 175vh;
+}
+	.address {
+	font-size: 1em;
+}
+
+.contactButton{
+	padding: 10px 20px;
+	border-radius: 5px 5px;
+	margin: 10px auto 10px 300px;
+}
+
+.contactForm{
+	text-align: left;
+	text-transform: uppercase;
+	font-family: 'Mukta', sans-serif;
+	font-size: 0.7em;
+	font-weight: lighter;
+	color: rgb(255, 255, 255);
+
+}
+
+.telMob{
+	color: rgb(225, 225, 225);
+	text-align: center;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1em;
+	font-style: none;
+}
+
+.formText{
+	margin-left: 20px;
+	text-align: left;
+	font-family: 'Mukta', sans-serif;
+	font-size: 1.5em;
+	font-weight: lighter;
+	color: rgb(255, 255, 255);
+}
+
+.formBox{
+	margin: 15px 20px;
+	width: 730px;
+	height: 80px;
+	opacity: 0.2;
+	border: 1px solid #fff;
+}
+	}
+
+
+
+/* Desktop Styles - 1024px Resolution */
+
+
+
+
